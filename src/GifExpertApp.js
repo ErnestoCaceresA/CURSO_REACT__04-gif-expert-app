@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import {AddCategory} from './components/AddCategory'
+import GifGrid from './components/GifGrid';
 
 const GifExpertApp = () => {
 
-    const [categories, setCategories] = useState(['Amor','Memes','Abrazo']);
+    const [categories, setCategories] = useState(['Amor']);
 
     // const handleAdd = (e) => {
     //     setCategories( cats => [...categories, "Naturaleza"] ); //OPERADOR SPREAD para agregar un nuevo elemento al arreglo usando el useState,
@@ -21,8 +22,8 @@ const GifExpertApp = () => {
 
             <ol>
                 {
-                    categories.map( e => {
-                        return <li key={e}>  {e}  </li>
+                    categories.map( category => {
+                        return <GifGrid key={category} category = {category}/>
                     } )
                 }
             </ol>

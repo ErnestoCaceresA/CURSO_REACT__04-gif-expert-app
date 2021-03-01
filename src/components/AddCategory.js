@@ -15,7 +15,7 @@ export const AddCategory = ({setCategories}) => {
         e.preventDefault(); //Evita que el form por defecto haga que refresque la pagina PROVAR DAR ENTER A UN FORM SIN ESTO Y VERAS COMO SE REFRESCA LA PAGINA POR COMPLETO
         
         if(inputValue.trim().length > 0){
-            setCategories( cats => [...cats,inputValue] ); //como no tenemos acceso a la variable de ese useSatate que es el categories usamos el callback cats => y esa es la variable categories cuando no tenemos acceso a ella
+            setCategories( cats => [inputValue,...cats] ); //como no tenemos acceso a la variable de ese useSatate que es el categories usamos el callback cats => y esa es la variable categories cuando no tenemos acceso a ella
             //setCategories se la pasamos como props desde el componente padre hasta este componente hijo
             setInputValue('');
         } else{
