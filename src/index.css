@@ -4,11 +4,15 @@
 
 body{
     padding: 50px;
+    background-image: url(https://www.wallpapertip.com/wmimgs/81-810286_simple-wallpaper-for-laptop-hd.jpg);
+    background-attachment: fixed;
 }
 input{
     width: 100%;
     font-size: 1.2rem;
-    color: grey;
+
+    /* color: rgba(136, 193, 218, 0.898); */
+    background: linear-gradient(to right, rgba(178, 135, 208, 0.701), rgb(42, 42, 56))
 }
 .card-grid{
     display: flex;
@@ -18,16 +22,25 @@ input{
 
 .card{
     align-content: center;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     border-radius: 6px;
     overflow: hidden;
     margin-bottom: 10px;
     margin-right: hidden;
+    backdrop-filter: blur(4px);
 }
 .card p{
     padding: 5px;
-    text-align: center;
+    text-align: left;
+    color: #fff;
 }
 .card img{
-    max-height: 170px;
+    width: 50%;
+    height: 80%;
+    /* max-height: 170px; */
 }
+
+/* Animaciones css */
+.animate__animated.animate__backInDown {
+    --animate-duration: 0.5s;
+  }
