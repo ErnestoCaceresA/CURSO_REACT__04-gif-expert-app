@@ -4,7 +4,7 @@ import GifGrid from './components/GifGrid';
 
 const GifExpertApp = () => {
 
-    const [categories, setCategories] = useState(['Amor']);
+    const [categories, setCategories] = useState(['Naturaleza']);
 
     // const handleAdd = (e) => {
     //     setCategories( cats => [...categories, "Naturaleza"] ); //OPERADOR SPREAD para agregar un nuevo elemento al arreglo usando el useState,

@@ -4,8 +4,10 @@
 
 body{
     padding: 50px;
-    background-image: url(https://www.wallpapertip.com/wmimgs/81-810286_simple-wallpaper-for-laptop-hd.jpg);
-    background-attachment: fixed;
+    /* background-image: url(https://www.wallpapertip.com/wmimgs/81-810286_simple-wallpaper-for-laptop-hd.jpg); */
+    /* background-attachment: fixed; */
+    background: radial-gradient(circle, #fff, #bbb);
+
 }
 input{
     width: 100%;
